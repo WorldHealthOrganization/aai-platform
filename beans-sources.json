@@ -1,7 +1,7 @@
 {
   "$comment": "The repositories whose beans the Platform board pulls in. Add or remove a repo here; nothing else needs to change. `store` is optional: leave it out and the script finds the store itself (a `cat/*/beans` branch if the repo has one, otherwise the folder named in the repo's `.beans.yml` on its default branch). `deny` lists repos that must never be pulled, whatever `sources` says.",
   "sources": [
-    { "repo": "WorldHealthOrganization/aai-platform", "store": { "branch": "cat/aai-platform/beans", "path": "beans/defs" } },
+    { "repo": "litlfred/aai-platform", "store": { "branch": "cat/aai-platform/beans", "path": "beans/defs" }, "$note": "Temporary: the beans branch exists only on the fork for now. Switch back to WorldHealthOrganization/aai-platform once this work is merged upstream." },
     { "repo": "litlfred/folio-assistant" },
     { "repo": "litlfred/bootstrap" },
     { "repo": "litlfred/bootstrap-tools" },
